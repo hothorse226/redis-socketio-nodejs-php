@@ -33,7 +33,7 @@
 	</div>
 	<script>
 		$(function() {
-			var socket = io.connect('http://localhost:3001');
+			var socket = io.connect('http://'+window.location.hostname+':3001');
 			var messageArea = $('#messageArea');
 
 			socket.on('message', function(msg) {
